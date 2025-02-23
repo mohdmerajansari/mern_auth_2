@@ -15,7 +15,7 @@ function Signup() {
     e.preventDefault();
     try {
       const { data } = await axios.post(
-        `${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}/api/users/signup`,
+        "https://mern-auth-2-api.vercel.app/api/users/signup",
         { name, email, password },
         {
           headers: { "Content-Type": "application/json" },
