@@ -14,7 +14,7 @@ function Login() {
     e.preventDefault();
     try {
       const { data } = await axios.post(
-        `${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}/api/users/login`,
+        "https://mern-auth-2-api.vercel.app/api/users/login",
         { email, password },
         {
           headers: { "Content-Type": "application/json" },
